@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Permanent+Marker&family=Poppins:ital,wght@0,400;1,100;1,300&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box ;
+	outline: none;
+	font-family: 'Poppins', sans-serif;
+}
+
+.flex{
+	display: flex;
+	justify-content: safe end;
+	margin-top: 50px;
+	margin-right: 20px;
+}
+.wrapper{
+	position: absolute;
+	top: 65%;
+	margin-top: 50px;
+	left: 27%;
+	transform: translate(-55%, -70%);
+	max-width: 750px;
+	background: #fff;
+	width: 100%;
+	padding: 20px;
+	margin-bottom: 35px;
+	border-radius: 5px;
+	box-shadow: 4px 4px 2px maroon;
+}
+.wrapper h2{
+	text-align: center;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+.wrapper .input_field{
+	margin-bottom: 2px ;
+}
+.wrapper .input_field input[type="text"], 
+.wrapper textarea{
+	width: 100%;
+	border: 1px solid #e0e0e0;
+	padding: 10px;
+}
+.wrapper textarea{
+	height: 80px;
+	resize: none;
+}
+.wrapper .btn input[type="submit"]{
+	border: 0;
+	padding: 10px;
+	width: 100%;
+	background: teal;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-weight: bold;
+	border-radius:  25px;
+	cursor: pointer;
+}
+.wrapper #error_message{
+	margin-bottom: 20px;
+	padding: 0px;
+	background : #fe8b8e;
+	text-align: center;
+	font-size: 14px;
+	transition: all 0.5 ease;
+}
+.notreCarte{
+	margin-top: -20px;
+	margin-bottom: 5px;
+	box-shadow: 4px 4px 2px maroon;
+}

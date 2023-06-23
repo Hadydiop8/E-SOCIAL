@@ -1,0 +1,184 @@
+h1{
+	text-align: center;
+	color: teal;
+	/*border: 1px double blue;*/
+	border-radius: 15px;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+h2{
+	text-align: center;
+	 margin-top: 25px;
+}
+ 
+.paragraphe{
+	text-align: justify;
+	padding: 15px;
+	background-color: #eee;
+}
+ 
+.trait{
+	background: teal;
+	width: 50rem;
+	margin: auto;
+	height: 0.5rem;
+	border-radius: 5px;
+	margin-bottom: 25px;
+}
+.btn1,.btn2{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 45px;
+	background:  #AEA53E;
+}
+.btn{
+	background: #eee;
+	border : 2px solid black;
+	border-radius: 25px;
+	flex-wrap: nowrap;
+	font-weight: bold;
+	color: black ;
+	margin: 25px;
+	transition: .1s linear;
+	position: relative;
+	cursor: pointer;
+}
+.btn:hover{
+	color: white !important;
+	background: maroon;
+	box-shadow: 0px 5px 0px 5px rgba(0, 0, 0, 1.0);
+}
+.btn a{
+	text-decoration: none;
+	color: none;
+	border: none;
+	color:black  ;
+}
+.btn a:hover{
+	color: white !important;
+}
+
+
+ 
+
+   /*AJOUT CATEGORIES*/
+ 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+	margin-top: 5rem;
+  width: 300px;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+} 
+.card h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+ 
+  
+ /*Ajout CATEGORIES/
+
+
+
+
+
+/* slider images  */
+
+.slider-wrapper{
+	position: relative;
+	height: 250px;
+	width: 90%;
+	margin: auto;
+	display: grid;
+	place-items: center;
+	overflow: hidden;
+}
+
+.slider-track{
+	display: flex;
+	width: calc(250 * 6);
+	animation: slidescroll 5s linear infinite;
+}
+.slider-track:hover{
+	animation-play-state: paused;
+}
+
+@keyframes slidescroll{
+	0%{
+		transform: translateX(0);
+	}
+	100%{
+		transform: translateX(calc(-250px * 1));
+	}
+}
+.slidee{
+	width: 250px;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	padding: 15px;
+	overflow: hidden;
+	perspective: 100px;
+	cursor: pointer;
+}
+.slidee img{
+	max-width: 100%;
+	min-height: 100%;
+	object-fit: cover;
+	transition: transform 1s;
+}
+
+.slidee img:hover{
+	transform: translateZ(20px);
+}
+/*shadow effects----------*/
+
+.slider-wrapper::before,
+.slider-wrapper::after{
+	background: linear-gradient(to right,rgba(255, 255, 2551) 0%, rgba(255, 255, 255,0) 100%);
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 15%;
+	z-index: 2;
+}
+.slider-wrapper::before{
+	left: 0;
+	top: 0;
+}
+
+.slider-wrapper::after{
+	right: -2px;
+    	transform: rotate(180deg);
+}
+
+/* slide js images */
+
+/*le logo*/
+.logo{
+	margin-top: 60px;
+	padding-bottom:10px;
+}
+/*le logo*/
